@@ -1,0 +1,40 @@
+﻿@{
+    ViewData["Title"] = "Pricing Calculator";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="text-center">
+        <h1 class="display-3">Pricing Calculator</h1>
+        <h4 class="display-6">Come catch a fish with me!</h4>
+        <br />
+
+        <label for="hours">Number of hours:</label>
+        <input type="number" id="hours" min="0" />
+        <br />
+        <br />
+        <input type="text" id="hourlyRate" value="Hourly Rate: $50" class="disabled-input" disabled />
+        <br />
+        <br />
+        <button id="calculateBtn">Calculate Total</button>
+        <br />
+        <br />
+        <div class="total-box">
+            <label for="total">Total Price:</label>
+            <output id="total"></output>
+        </div>
+        
+       
+    </div>
+</body>
+</html>
+
+@section scripts {
+    <script src="~/js/site.js"></script>
+}
